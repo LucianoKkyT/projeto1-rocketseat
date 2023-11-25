@@ -1,0 +1,57 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  margin: 0; /*Por padrão, os navegadores colocam 8px. Temos que zerar para colar nas extremidades.*/
+  /*overflow-y: hidden; /* Hide vertical scrollbar */
+  
+}
+
+#hero {
+  width: 592px;
+  margin: 0 auto 72px; /*Ele vai igualar o tamanho de ambos os lados do elemento. Shorthand(atalho) para os 4*/
+}
+
+hero, img {
+  margin-bottom: 72px;
+}
+
+h1 {  
+font-family: 'Inter', sans-serif;
+font-size: 49px;
+line-height: 56px; /*Altura da linha*/
+font-weight: normal; /*Peso da fonte*/
+margin-bottom: 32px;
+}
+
+h1 span { /* Sem separar com vírgula, para entender que um (span)é filho do anterior*/
+  font-weight: bold;
+}
+
+
+span, a {
+  color: #FF9900;
+}
+
+p, #footer {
+  color: #7D7987;
+  font-size: 14px;
+  line-height: 28px;
+}
+
+#footer a + a {/*Pegue o a que anterior a ele tenha outro a e aplique a margem abaixo*/
+  margin-left: 28px;
+}
+
+#line {
+  width: 568px; /* Tamanho*/
+  height: 0px; /*Altura*/
+  margin: 0 auto 8px;
+  border: 1px solid #ECEFF2;
+}
+
+#balls {
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  margin: 0px;
+}
